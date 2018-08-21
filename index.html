@@ -23,29 +23,29 @@
         <form class="form" action="">
           <h1 class="form__title">Get in touch</h1>
 
-          <div class="form__wrap-input" data-validate="Name is required">
-            <input class="input-field" type="text" name="name" placeholder="Name">
+          <div class="form__wrap-input">
+            <input class="input-field" type="text" name="name" placeholder="Name" required pattern="[a-zA-Z]{3,5}">
             <span class="focus-input"></span>
             <span class="symbol-input">
               <i class="fa fa-user" aria-hidden="true"></i>
             </span>
           </div>
 
-          <div class="form__wrap-input" data-validate="Valid email is required">
-            <input class="input-field" type="text" name="email" placeholder="Email">
+          <div class="form__wrap-input">
+            <input class="input-field" type="text" name="email" placeholder="Email" required pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?">
             <span class="focus-input"></span>
             <span class="symbol-input">
               <i class="fas fa-envelope" aria-hidden="true"></i>
             </span>
           </div>
 
-          <div class="form__wrap-input" data-validate="Message is required">
-            <textarea class="input-field" name="message" placeholder="Message"></textarea>
+          <div class="form__wrap-input">
+            <textarea class="input-field" name="message" placeholder="Message" required></textarea>
             <span class="focus-input"></span>
           </div>
           
-          <div class="">
-            <button class="">
+          <div class="form__wrap-button">
+            <button class="btn">
               Send
             </button>
           </div>

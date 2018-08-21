@@ -6,12 +6,12 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
 }
 
 input {
 	outline: none;
   border: none;
+  color: #aaa;
 }
 
 input::placeholder {
@@ -172,4 +172,74 @@ button:hover {
 .input-field:focus + .focus-input + .symbol-input {
   color: #846add;
   padding-left: 22px;
+}
+
+.form__wrap-button {
+  padding-top: 20px;
+}
+
+.btn {
+  width: 100%;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #846add;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 800;
+  transition: all 0.4s;
+}
+
+.btn:hover {
+  background-color: #333;
+}
+
+/**********************************
+  * RESPONSIVE BREAKPOITNS
+**/
+
+@media (max-width: 1200px) {
+  .tilt-img {
+    width: 33.5%;
+  }
+
+  .form {
+    width: 44%;
+  }
+}
+
+@media (max-width: 992px) {
+  .wrap-contact-form {
+    padding: 110px 80px 157px 90px;
+  }
+
+  .tilt-img {
+    width: 35%;
+  }
+
+  .form {
+    width: 55%;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrap-contact-form {
+    padding: 110px 80px 157px 80px;
+  }
+
+  .tilt-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .wrap-contact-form {
+    padding: 110px 15px 157px 15px;
+  }
 }

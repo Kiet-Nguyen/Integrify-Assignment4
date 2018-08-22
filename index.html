@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <main class="container">
+    <div class="form-container">
+      <form class="form-wrapper">
+        <header class="form-title">
+          <h1 class="heading-1 text-highlight">Let's talk</h1>
+          <p>Think you have what it takes? Show us.</p>
+        </header>
+
+        <section class="personal-info">
+          <h2 class="heading-2 text-highlight">1. Personal Information</h2>
+
+          <!-- Name, email and phone number -->
+          <div class="personal-info__1">
+            <div class="name-email">
+              <input class="input-field" type="text" name="name" placeholder="Full name*" required pattern="[A-Za-z0-9]+">
+              <input class="mt-xs input-field" type="email" name="email" placeholder="Email*" required pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?">
+              <input class="mt-xs input-field" type="email" name="email" placeholder="Re-enter email*" required pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?">
+            </div>
+            
+            <div class="phone">
+              <input class="input-field" type="number" name="phoneNum" placeholder="Phone*" required pattern="[0-9]">
+            </div>
+          </div>
+
+          <!-- Address -->
+          <div class="personal-info__2">
+            <input class="input-field" type="text" name="address" placeholder="Address*" required>
+            <input class="mt-xs input-field" type="text" name="name">
+
+            <div class="address-info">
+              <input class="mt-xs input-field" type="text" name="city" placeholder="City*" required pattern="[a-z]">
+              <input class="mt-xs input-field" type="text" name="state" placeholder="State" pattern="[A-Za-z0-9]">
+              <input class="mt-xs input-field" type="text" name="country" placeholder="Country/Region*" required pattern="[A-Za-z]">
+              <input class="mt-xs input-field" type="number" name="zip" placeholder="Zip/Postal code" pattern="[0-9]">
+            </div>
+
+            <input class="mt-xs input-field" type="text" name="ads-info" placeholder="How do you know about us">
+          </div>
+        </section>
+
+        <section class="skills-location">
+          <h2 class="heading-2 text-highlight">2. Skills and location</h2>
+
+          <h3 class="heading-3">Which is your primary design discipline?</h3>
+          <div class="skills-location__1">
+            <a href="#" class="mt-xs discipline">Design Research</a>
+            <a href="#" class="mt-xs discipline">Visual Design</a>
+            <a href="#" class="mt-xs discipline">UX Design</a>
+            <a href="" class="mt-xs discipline">Front-end Dev</a>
+          </div>
+
+          <div class="skills-location__2">
+            <div class="experience">
+              <h3 class="heading-3">Do you have experience with any other disciplines?</h3>
+              <div class="checkboxes mt-xs">
+                <div class="checkboxes__item">
+                  <input type="checkbox" value="Visual Design" id="visualDesign">
+                  <label for="visualDesign" class="checkbox-label">
+                    <span class="checkbox-input"></span>
+                    Visual Design
+                  </label>
+                </div>
+                
+                <div class="checkboxes__item">
+                  <input type="checkbox" value="Visual Design" id="UX">
+                  <label for="UX" class="checkbox-label">
+                    <span class="checkbox-input"></span>
+                    UX Design
+                  </label>
+                </div>
+
+                <div class="checkboxes__item">
+                  <input type="checkbox" value="Visual Design" id="front-end">
+                  <label for="front-end" class="checkbox-label">
+                    <span class="checkbox-input"></span>
+                    Front-end Development
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="location">
+              <h3 class="heading-3">Where are you interested in working?</h3>
+              <p class="note-text mt-xs">
+                You must be legally authorized to work without visa sponsorship in the location(s) you choose.
+              </p>
+
+              <div class="mt-xs">
+                <div class="checkboxes__item">
+                  <input type="checkbox" value="Visual Design" id="austin">
+                  <label for="austin" class="checkbox-label">
+                    <span class="checkbox-input"></span>
+                    Austin, Texas
+                  </label>
+                </div>
+                
+                <div class="checkboxes__item">
+                  <input type="checkbox" value="Visual Design" id="new-york">
+                  <label for="new-york" class="checkbox-label">
+                    <span class="checkbox-input"></span>
+                    New York, New York
+                  </label>
+                </div>
+                
+                <div class="checkboxes__item">
+                  <input type="checkbox" value="Visual Design" id="toronto">
+                  <label for="toronto" class="checkbox-label">
+                    <span class="checkbox-input"></span>
+                    Toronto, Canada
+                  </label>
+                </div>
+                
+                <div class="checkboxes__item">
+                  <input type="checkbox" value="Visual Design" id="shanghai">
+                  <label for="shanghai" class="checkbox-label">
+                    <span class="checkbox-input"></span>
+                    Shanghai, China
+                  </label>
+                </div>
+                
+                <div class="checkboxes__item">
+                  <input type="checkbox" value="Visual Design" id="dublin">
+                  <label for="dublin" class="checkbox-label">
+                    <span class="checkbox-input"></span>
+                    Dublin, Ireland
+                  </label>
+                </div>
+                
+                <div class="checkboxes__item">
+                  <input type="checkbox" value="Visual Design" id="hursley">
+                  <label for="hursley" class="checkbox-label">
+                    <span class="checkbox-input"></span>
+                    Hursley, United Kingdom
+                  </label>
+                </div>
+                
+                <div class="checkboxes__item">
+                  <input type="checkbox" value="Visual Design" id="boeblingen">
+                  <label for="boeblingen" class="checkbox-label">
+                    <span class="checkbox-input"></span>
+                    Boeblingen, Germany
+                  </label>
+                </div>
+                
+                <div class="checkboxes__item">
+                  <input type="checkbox" value="Visual Design" id="else">
+                  <label for="else" class="checkbox-label">
+                    <span class="checkbox-input"></span>
+                    Somewhere else
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="portfolio">
+          <h2 class="heading-2 text-highlight">3. Portfolio</h2>
+          <h3 class="heading-3">
+            Prove your're IBM's next great designer by showing us who you are. What you've done. How you think. Tell us your story.
+          </h3>
+
+          <div class="portfolio__details">
+            <input class="mt-xs input-field" type="text" name="country" placeholder="Portfolio link*" required>
+
+            <textarea class="texarea-field" name="comment" placeholder="Anything else (another link, availability, ect.)?"></textarea>
+          </div>
+        </section>
+
+        <button class="btn" type="submit">Submit</button>
+      </form>
+    </div>
+  </main>
+</body>
+
+</html>

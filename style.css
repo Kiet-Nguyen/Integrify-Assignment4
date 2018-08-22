@@ -273,7 +273,17 @@ a {
   * RESPONSIVE BREAKPOINTS
 **/
 
-@media only screen and (max-width: 768px) {
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1023px)  { 
+  .skills-location__1,
+  .address-info {
+    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  }
+}
+
+@media only screen 
+and (max-width: 768px) {
   .name-email {
     width: 100%;
   }

@@ -37,9 +37,9 @@ body {
   color: var(--heading-color);
 }
 
-/* .input-field:invalid {
+.input-field:focus:invalid {
   border-bottom: 2px solid var(--invalid);
-} */
+}
 
 .texarea-field {
   border: 2px solid var(--placeholer-color);
@@ -203,12 +203,15 @@ a {
   padding: 1rem;
   text-align: center;
   background-color: var(--bg-primary-color);
+  transition: all 0.2s;
 }
 
 .discipline:hover {
-  border: 2px solid var(--heading-border-color);
-  color: var(--heading-color);
-  background-color: var(--heading-border-color);
+  transform: translateY(-3px);
+}
+
+.discipline:active {
+  transform: translateY(-1px);
 }
 
 input[type='radio'] {

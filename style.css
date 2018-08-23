@@ -198,17 +198,24 @@ a {
 .discipline {
   transition: all 0.1s;
   font-size: 1.2rem;
-}
-
-.discipline:link {
   border: 2px solid var(--text-color);
   border-radius: 0;
-  padding: 1rem 1.5rem;
+  padding: 1rem;
   text-align: center;
   background-color: var(--bg-primary-color);
 }
 
 .discipline:hover {
+  border: 2px solid var(--heading-border-color);
+  color: var(--heading-color);
+  background-color: var(--heading-border-color);
+}
+
+input[type='radio'] {
+  display: none;
+}
+
+input[type='radio']:checked + .discipline {
   border: 2px solid var(--btn-bg-hover-color);
   color: var(--heading-color);
   background-color: var(--btn-bg-hover-color);
@@ -263,7 +270,7 @@ a {
   font-size: 1.3rem;
 }
 
-.checkboxes__item input:checked + .checkbox-label > .checkbox-input::after {
+input[type='checkbox']:checked + .checkbox-label > .checkbox-input::after {
   opacity: 1;
 }
 
